@@ -30,7 +30,7 @@ plot_stas <- value |> as_tsibble() |>
   ggplot(aes(x = index, y = value)) + geom_line() + theme_bw() +
   xlab("Obs") + ylab("Nilai")
 plot_stas
-mean(stas)
+mean(value)
 ```
 
 Plot deret waktu di atas menunjukkan bahwa data tidak stasioner dalam rataan dan tidak stasioner dalam ragam. Dari plot deret waktu diatas dapat dilihat data cenderung membentuk pola trend
